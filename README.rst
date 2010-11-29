@@ -13,6 +13,9 @@ all (NSAPI? boring!) So instead I thought I'd go buzzword crazy. Check it out:
 *CSS3*, *Chrome extension* (maybe doesn't qualify as a cool buzzword, but
 whatever). Beat that, C++.
 
+Basically, all the capturing is done by the Node.js server, which sends its
+results to a Chrome extension via WebSockets.
+
 Installing and Running
 ======================
 To get it going, install node.js (`brew install node` if you're cool, or `yaourt
