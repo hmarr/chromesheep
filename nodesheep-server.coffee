@@ -1,5 +1,4 @@
 pcap = require 'pcap'
-utils = require 'utils'
 http = require 'http'
 events = require 'events'
 ws = require 'websocket-server'
@@ -73,7 +72,7 @@ class NodeSheep extends events.EventEmitter
 
 
 sheep = new NodeSheep [new HackerNewsHandler]
-sheep.startCapture (process.argv[0] or '')
+sheep.startCapture (process.argv[2] or '')
 
 wsServer = ws.createServer()
 wsServer.addListener 'connection', (conn) ->
